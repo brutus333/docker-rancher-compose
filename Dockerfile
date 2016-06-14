@@ -10,4 +10,6 @@ RUN cd /tmp && \
     mv rancher-compose*/rancher-compose /usr/local/bin && \
     rm -rf rancher-compose.tar.gz && rmdir rancher-compose*
 
+RUN apk add git
+
 CMD /bin/sh
