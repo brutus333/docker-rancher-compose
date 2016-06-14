@@ -13,6 +13,6 @@ RUN cd /tmp && \
 
 RUN sed -i -e 's/ash/bash/g' /etc/passwd
 
-COPY rancher_compose_env /etc/profile.d/
+COPY rancher_compose_env /root/.bashrc
 
 CMD /bin/bash
