@@ -12,4 +12,6 @@ RUN cd /tmp && \
 
 RUN apk add git
 
+COPY rancher-compose-env /etc/profile.d/
+
 CMD /bin/sh
