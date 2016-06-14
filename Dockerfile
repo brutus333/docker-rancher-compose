@@ -11,7 +11,7 @@ RUN cd /tmp && \
     mv rancher-compose*/rancher-compose /usr/local/bin && \
     rm -rf rancher-compose.tar.gz && rmdir rancher-compose*
 
-RUN apk add git
+RUN sed -i -e 's/ash/bash/g' /etc/passwd
 
 COPY rancher_compose_env /etc/profile.d/
 
