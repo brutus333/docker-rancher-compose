@@ -1,0 +1,7 @@
+rancher-compose:
+  labels:
+    io.rancher.container.create_agent: true
+    io.rancher.container.agent.role: environment
+    io.rancher.container.hostname_override: container_name
+  build: https://github.com/brutus333/docker-rancher-compose.git
+  stdin_open: true
